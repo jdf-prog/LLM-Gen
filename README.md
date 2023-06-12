@@ -58,6 +58,19 @@ model="chavinlo/alpaca-13b"
 ${cmd} _generate_candidates.sh "$dataset" "$set" "$model" "$prompt_max_length" "$output_max_length"
 ```
 
+##### Currently Tested Models
+1. chavinlo/alpaca-13b
+2. eachadea/vicuna-13b-1.1
+3. databricks/dolly-v2-12b
+4. stabilityai/stablelm-tuned-alpha-7b
+5. OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5
+6. TheBloke/koala-13B-HF
+7. project-baize/baize-v2-13b
+8. google/flan-t5-xxl
+9. THUDM/chatglm-6b
+10. fnlp/moss-moon-003-sft
+11. mosaicml/mpt-7b-chat
+
 ### Evaluating Candidates
 
 To evaluate candidates with auto metrics, you can refer to [`eval_candidates.sh`](./eval_candidates.sh)

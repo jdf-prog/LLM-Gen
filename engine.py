@@ -123,8 +123,8 @@ def beam_search_step(input_ids, attention_mask, tokenizer, base_model, args, **k
 
     generated = []
     for i in range(len(summary_ids_in_list)):
-        generated.append(tokenizer.decode(summary_ids_in_list[i], skip_special_tokens=False, clean_up_tokenization_spaces=True))
-    # generated = tokenizer.batch_decode(summary_ids, skip_special_tokens=True, clean_up_tokenization_spaces=True)
+        generated.append(tokenizer.decode(summary_ids_in_list[i], skip_special_tokens=True, clean_up_tokenization_spaces=True))
+
     if hasattr(args, "stop_str") and args.stop_str:
         for i in range(len(generated)):
             pos = generated[i].find(args.stop_str)

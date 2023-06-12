@@ -96,6 +96,7 @@ def get_stop_str_and_ids(name_or_path, tokenizer):
         pass
     elif "moss" in name_or_path:
         stop_str = "<|Human|>:"
+        stop_token_ids = tokenizer.convert_tokens_to_ids(tokenizer.all_special_tokens)
     else:
         found_template = False
         for name in conv_templates:

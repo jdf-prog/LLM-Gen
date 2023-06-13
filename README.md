@@ -1,5 +1,8 @@
 # LLM-Gen
 
+LLM-Gen is used to construct dataset [**MixInstruct**](https://huggingface.co/datasets/llm-blender/mix-instruct). 
+It's also part of project [**LLM-Blender**](https://github.com/yuchenlin/LLM-Blender)
+
 ## What LLM-Gen for?
 Currently there are various open-source LLMs. However, different LLMs are trained with different prompting templates to function properly. 
 Otherwise, you might get funny responses with problems like halluciations, repetitions, etc, damaging the quality of generation severely.
@@ -125,6 +128,3 @@ By specifying `save_prepared` as `True`, the script will finally aggrerate all t
 ]
 ```
 
-### Note
-LLM-Gen is used to construct dataset [**MixInstruct**](https://huggingface.co/datasets/llm-blender/mix-instruct). 
-It's also part of project [**LLM-Blender**](https://github.com/yuchenlin/LLM-Blender)

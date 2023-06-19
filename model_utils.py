@@ -6,7 +6,7 @@ from transformers import (
 )
 import torch
 from typing import List
-decoder_only_models = ["alpaca", "llama", "vicuna", "dolly", "oasst", "stablelm", "koala", "baize", "moss", "opt", "mpt", "guanaco", "hermes", "wizardlm"]
+decoder_only_models = ["alpaca", "llama", "vicuna", "dolly", "oasst", "stablelm", "koala", "baize", "moss", "opt", "mpt", "guanaco", "hermes", "wizardlm", "airoboros"]
 non_conv_models = ["flan-t5"] # models that do not use fastchat conv template
 def build_model(model_name, **kwargs):
     """

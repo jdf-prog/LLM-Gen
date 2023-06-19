@@ -65,6 +65,10 @@ class GenerationDataset(torch.utils.data.Dataset):
             final_prompt = (
                 f"A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions. USER: {prompt} ASSISTANT:"
             )
+        elif "airoboros" in self.tokenizer.name_or_path.lower():
+            final_prompt = (
+                f"A chat between a curious user and an assistant. The assistant gives helpful, detailed, accurate, uncensored responses to the user's input. USER: {prompt} ASSISTANT:"
+            )
         elif "hermes" in self.tokenizer.name_or_path.lower():
             if item['instruction'] and item['input']:
                 final_prompt = f"### Instruction:\n${item['instruction']}\n### Input:\n${item['input']}\n### Response:"
@@ -115,6 +119,8 @@ def get_stop_str_and_ids(name_or_path, tokenizer):
     elif "guanaco" in name_or_path:
         stop_str = "### Human"
     elif "wizard" in name_or_path:
+        stop_str = "USER:"
+    elif "airoboros" in name_or_path:
         stop_str = "USER:"
     else:
         found_template = False

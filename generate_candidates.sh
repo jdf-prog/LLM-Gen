@@ -13,7 +13,7 @@ set="test"
 prompt_max_length=256
 output_max_length=512
 
-cmd="sbatch"
+cmd="bash"
 
 # model="chavinlo/alpaca-13b"
 # ${cmd} _generate_candidates.sh "$dataset" "$set" "$model" "$prompt_max_length" "$output_max_length"

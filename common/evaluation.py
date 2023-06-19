@@ -11,7 +11,6 @@ from evaluate import load
 from sacrebleu import sentence_bleu, corpus_bleu
 from nltk import word_tokenize
 from typing import List, Optional, Union, Dict, Tuple
-from absl import logging
 from torch import split
 from tqdm import tqdm
 from nltk import sent_tokenize
@@ -21,7 +20,6 @@ from pycocoevalcap.spice.spice import Spice
 from pycocoevalcap.cider.cider import Cider
 from pycocoevalcap.bleu.bleu import Bleu
 from pycocoevalcap.tokenizer.ptbtokenizer import PTBTokenizer
-logging.set_verbosity(logging.WARNING)
 
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:512"
 

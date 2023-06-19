@@ -2,3 +2,11 @@ torch
 transformers
 fschat
 accelerate
+tabulate
+numpy
+prettytable
+evaluate
+sacrebleu
+nltk
+rouge_score
+pycocoevalcap

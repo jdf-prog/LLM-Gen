@@ -54,10 +54,7 @@ cmd="bash"
 # model="fnlp/moss-moon-003-sft"
 # ${cmd} _generate_candidates.sh "$dataset" "$set" "$model" "$prompt_max_length" "$output_max_length"
 
-model="TheBloke/guanaco-7B-HF"
-${cmd} _generate_candidates.sh "$dataset" "$set" "$model" "$prompt_max_length" "$output_max_length"
-
-# model="TheBloke/guanaco-65B-HF"
+# model="TheBloke/guanaco-7B-HF"
 # ${cmd} _generate_candidates.sh "$dataset" "$set" "$model" "$prompt_max_length" "$output_max_length"
 
 # model="Yhyu13/oasst-rlhf-2-llama-30b-7k-steps-hf"
@@ -69,5 +66,5 @@ ${cmd} _generate_candidates.sh "$dataset" "$set" "$model" "$prompt_max_length" "
 # model="ehartford/WizardLM-13B-Uncensored"
 # ${cmd} _generate_candidates.sh "$dataset" "$set" "$model" "$prompt_max_length" "$output_max_length"
 
-# model="eachadea/vicuna-13b-1.1"
+# model="jondurbin/airoboros-7b"
 # ${cmd} _generate_candidates.sh "$dataset" "$set" "$model" "$prompt_max_length" "$output_max_length"

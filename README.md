@@ -3,6 +3,9 @@
 LLM-Gen is used to construct dataset [**MixInstruct**](https://huggingface.co/datasets/llm-blender/mix-instruct). 
 It's also part of project [**LLM-Blender**](https://github.com/yuchenlin/LLM-Blender)
 
+## Updates
+
+- 🔥 2023.6.19 Add supports for Guanaco, Nous-Hermes, WizardLM and airoboros
 ## What LLM-Gen for?
 Currently there are various open-source LLMs. However, different LLMs are trained with different prompting templates to function properly. 
 Otherwise, you might get funny responses with problems like halluciations, repetitions, etc, damaging the quality of generation severely.
@@ -73,6 +76,10 @@ ${cmd} _generate_candidates.sh "$dataset" "$set" "$model" "$prompt_max_length" "
 9. THUDM/chatglm-6b
 10. fnlp/moss-moon-003-sft
 11. mosaicml/mpt-7b-chat
+12. TheBloke/guanaco-7B-HF
+13. NousResearch/Nous-Hermes-13b
+14. ehartford/WizardLM-13B-Uncensored
+15. jondurbin/airoboros-7b
 
 ### Evaluating Candidates
 
